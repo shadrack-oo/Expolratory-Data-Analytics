@@ -2,10 +2,12 @@
 ##Plotting Dataset: Electric power consumption
 
 #First Plot
-data <- unzip( "exdata_data_household_power_consumption.zip" )
-data1 <- read.csv(data, sep = ";")
+
+data1 <- read.csv("EPC.csv")
 
 #Creating a Subset of dates 2007-02-01 and 2007-02-02 for Correct Data Limit
+data <- unzip( "D:/COUSERA COUSES/Data Science John Hopkins/3.Exploring Data Analysis/Week 1/exdata_data_household_power_consumption.zip" )
+data1 <- read.csv(data, sep = ";")
 
 data2 <- subset(data1 , Date=="1/2/2007" | Date== "2/2/2007")
 
